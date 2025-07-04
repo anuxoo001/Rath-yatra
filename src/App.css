@@ -1,0 +1,83 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #ffffff;
+  color: #3e2f1c;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+.side-border {
+  position: fixed;
+  top: 0;
+  width: 60px; /* wide border */
+  height: 100vh;
+  z-index: 9999;
+  pointer-events: none; /* so clicks pass through */
+  background:
+    repeating-linear-gradient(
+      45deg,
+      #ff7f50,
+      #ff7f50 10px,
+      #ff6347 10px,
+      #ff6347 20px
+    );
+  box-shadow: 0 0 10px rgba(255, 127, 80, 0.7);
+}
+
+.side-border.right {
+  right: 0;
+  background:
+    repeating-linear-gradient(
+      -45deg,
+      #ff7f50,
+      #ff7f50 10px,
+      #ff6347 10px,
+      #ff6347 20px
+    );
+}
+
+.side-border.left {
+  left: 0;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      #ff7f50,
+      #ff7f50 10px,
+      #ff6347 10px,
+      #ff6347 20px
+    );
+}
+
+/* Content wrapper padding so text doesn’t overlap side borders */
+.content-wrapper {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.youtube-container {
+  display: inline-block;
+  padding: 8px; /* space between border and iframe */
+  border: 5px solid #ff7f50; /* coral colored thick border */
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 127, 80, 0.7); /* subtle glowing shadow */
+  background-color: #fff0e6; /* light background inside border */
+  transition: box-shadow 0.3s ease;
+  margin: 0 auto; /* center horizontally */
+}
+
+.youtube-container:hover {
+  box-shadow: 0 0 25px rgba(255, 127, 80, 1); /* stronger glow on hover */
+}
+
+/* Style form labels and inputs nicely inside the booking section */
+section label {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+section select,
+section input {
+  font-size: 1rem;
+}
+
