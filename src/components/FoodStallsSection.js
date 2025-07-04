@@ -7,25 +7,25 @@ const FoodStallsSection = () => {
     {
       id: 1,
       name: 'Dahibara Aloodum',
-      image: '/images/food1.jpg',
+      image: `${process.env.PUBLIC_URL}/images/food1.jpg`,
       description: 'A famous Cuttack street food: soaked vadas served with spicy potato curry and ghuguni.',
     },
     {
       id: 2,
       name: 'Rasagola',
-      image: '/images/food2.jpg',
+      image: `${process.env.PUBLIC_URL}/images/food2.jpg`,
       description: 'Soft, syrupy balls made from fresh chhena (cottage cheese), originating from Puri.',
     },
     {
       id: 3,
       name: 'Khaja',
-      image: '/images/food3.jpg',
+      image: `${process.env.PUBLIC_URL}/images/food3.jpg`,
       description: 'A crunchy sweet dish offered as Mahaprasad in Jagannath Temple. Made of layered flour and sugar.',
     },
     {
       id: 4,
       name: 'Chhena Poda',
-      image: '/images/food4.jpg',
+      image: `${process.env.PUBLIC_URL}/images/food4.jpg`,
       description: 'Baked cheese dessert made from fresh chhena, sugar, and nuts — Odisha’s favorite!',
     },
   ];
